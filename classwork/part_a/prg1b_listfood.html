@@ -1,0 +1,20 @@
+<html>
+    <body>
+<h1>
+    Select food from the list
+</h1>
+    <form>
+        <select id='food', onchange="foodSelect()">
+            <option value="idli">idli</option>
+            <option value="vada">vada</option>
+            <option value="dosa">dosa</option>
+        </select>
+    </form>
+    </body>
+    <script>
+        function foodSelect() {
+            var f = document.forms[0].food.value;
+            alert("You selected " + f);
+        }
+    </script>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <h1> form</h1>
+        <form>
+            Enter number <input type='text' id='inp1' value='0'><br>
+        </form>
+        <button type='button' id="output" onclick="submit()"> submit! </button>
+
+    </body>
+    <script>
+        function submit(){
+            number = document.getElementById('inp1').value;
+            text = "";
+            if (number % 3 == 0 && number % 7 == 0){
+                text += " is divisible by 3 and 7"
+            }
+            else if (number % 7 == 0){
+                text += " is divisible by 7"
+            }
+            else if (number % 3 == 0){
+                text += " is divisible by 3"
+            }
+            else{
+                text = "not divisible by eiter";
+            }
+
+            document.getElementById('output').innerHTML = text;
+        }
+    </script>
+</html>

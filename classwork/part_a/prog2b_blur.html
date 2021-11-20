@@ -1,0 +1,14 @@
+<html>
+    <body>
+        Enter your name 
+        <input type="text"  id="textinp" onfocus="focusedFunc()" onblur="blurFunc()" > 
+    </body>
+    <script>
+        function focusedFunc(){
+            document.getElementById("textinp").style.background = 'yellow';
+        }
+        function blurFunc(){
+            document.getElementById("textinp").style.background = "red";
+        }
+    </script>
+</html>

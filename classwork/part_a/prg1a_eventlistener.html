@@ -1,0 +1,17 @@
+<html>
+  <body>
+      <h1>Adding multiple eventlistener to single button</h1>
+      <button id='mybtn'> Click to try</button>
+  </body>
+  <script>
+    var btn = document.getElementById("mybtn");
+    btn.addEventListener("click",func1);
+    btn.addEventListener("click",func2);
+    function func1(){
+        alert("Function 1 was called.");
+    }
+    function func2(){
+        alert("function 2 was called");
+    }
+</script>
+</html>

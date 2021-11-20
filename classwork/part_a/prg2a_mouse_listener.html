@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h1>2 event listeners on a gui component</h1>
+        <p id="demotext"> Text will be replaced here</p>
+        <button id='button'> Click here to see what happens</button>
+    </body>
+    <script>
+        var button  = document.getElementById('button');
+        button.addEventListener("mouseover",myMouseFunct1);
+        button.addEventListener("click",clickfn);
+
+        button.addEventListener('mouseout',myMouseFunct2);
+        function myMouseFunct1(){
+            document.getElementById("demotext").innerHTML = "Mouse has been hovered over the button";
+
+        }
+        function myMouseFunct2(){
+            document.getElementById("demotext").innerHTML = "Mouse has been removed over the button";
+
+        }
+        function clickfn(){
+            alert("Button has been clicked!!!!");
+        }
+    </script>
+</html>

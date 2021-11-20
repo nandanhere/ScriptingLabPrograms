@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1> form</h1>
+        <form>
+            Enter name <input type='text' id='inp1' value='noname'><br>
+            Enter age <input type='text' id='inp2' value='1'>
+        </form>
+        <button type='button' onclick="submit()"> submit! </button>
+
+        <p id='output'> output will be here</p>
+    </body>
+    <script>
+        function submit(){
+            name = document.getElementById('inp1').value;
+            age = document.getElementById('inp2').value;
+            document.getElementById('output').innerHTML = "your name is " + name + " and your age is " + age;
+        }
+    </script>
+</html>

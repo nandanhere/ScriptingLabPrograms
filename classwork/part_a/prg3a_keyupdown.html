@@ -1,0 +1,13 @@
+<html>
+    <body>
+    <form>
+        Enter text and press up or down
+        <input type="text" id='inputtext' onkeyup="changecolor('red')" onkeydown="changecolor('yellow')">
+    </form>
+    </body>
+    <script>
+        function changecolor(color){
+            document.forms[0].inputtext.style.background = color;
+        }
+    </script>
+</html>

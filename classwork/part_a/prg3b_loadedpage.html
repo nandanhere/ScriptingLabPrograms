@@ -1,0 +1,14 @@
+<html>
+    <body>
+        Press button to change color!!
+        <button  type='button' onclick="changecolor()"> Press me!!</button>
+    </body>
+    <script>
+        var count = 1;
+        function changecolor(){
+            count += 1;
+            count %= 2;
+            document.body.style.backgroundColor = (count == 0) ? 'red' : 'green';
+        }
+    </script>
+</html>
